@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import DragDrop from "./dragDrop";
+import Previews from "./dropZone";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<h1>Drag and Drop</h1>
+			<DragDrop />
+			<h1>Dropzone</h1>
+			<Previews />
+		</div>
+	);
 }
 
 export default App;
